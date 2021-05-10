@@ -33,7 +33,7 @@
         android:text="Получаем название..."
         android:textSize="20sp"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:isScrollContainer="true"/>
     <TextView
         android:id="@+id/txtRace"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@id/txtName"
         android:layout_marginTop="20dp"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="Раса: получаем расу..."
         android:textSize="20sp"
         android:isScrollContainer="true"/>
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@id/txtRace"
         android:layout_marginTop="20dp"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="Деятельность: получаем деятельность..."
         android:textSize="20sp"
         android:isScrollContainer="true"/>
@@ -70,7 +70,7 @@
             android:id="@+id/txtDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:text="Описание: получаем описание..."
             android:textSize="20sp"
             android:isScrollContainer="true"
