@@ -7,7 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        val intent = Intent(this@MainActivity,ListActivity::class.java);
+        var intent = Intent(this@MainActivity,ListActivity::class.java);
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnArmor.setOnClickListener {
@@ -37,6 +37,9 @@ class MainActivity : AppCompatActivity() {
         btnLocations.setOnClickListener {
             intent.putExtra("Result","location")
             startActivity(intent)
+        }
+        btnAddRecord?.setOnClickListener{
+            startActivity(Intent(this@MainActivity,CreateRecordActivity::class.java))
         }
     }
 }

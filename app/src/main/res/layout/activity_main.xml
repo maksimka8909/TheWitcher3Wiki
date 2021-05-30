@@ -22,6 +22,7 @@
             android:layout_marginEnd="25dp"
             android:background="@drawable/ic_sword"
             android:backgroundTint="@color/white"
+
             />
         <Button
             android:id="@+id/btnArmor"
@@ -91,6 +92,7 @@
             android:background="@drawable/ic_castle"
             android:backgroundTint="@color/white"
             android:textSize="65sp"/>
+
     </LinearLayout>
 
 </LinearLayout>

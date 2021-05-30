@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateRecordActivity">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtChooseCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите категорию"
+            android:textSize="30sp"/>
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/categories"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите имя локации"
+            android:textSize="25sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <EditText
+            android:id="@+id/edtxtName"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtChooseTypeLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите тип локации"
+            android:textSize="30sp"/>
+        <Spinner
+            android:id="@+id/spTypeLocation"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtChooseCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите страну"
+            android:textSize="30sp"/>
+        <Spinner
+            android:id="@+id/spCountry"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtSourceImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите ссылку на изображение"
+            android:textSize="25sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <EditText
+            android:id="@+id/edtxtSourceImage"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:maxLines="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logoimage"/>
+        <Button
+            android:id="@+id/btnCheckImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Проверить изображение"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите описание"
+            android:textSize="25sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <EditText
+            android:id="@+id/edtxtDescription"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            />
+        <Button
+            android:id="@+id/btnCreateRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить запись"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
